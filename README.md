@@ -12,7 +12,7 @@ Calculate SU(4) → SU(2)_S ⊗ SU(2)_T decompositions for nuclear structure the
 
 ```bash-zsh
 # 1. Install using corrected installer
-python install_su4_branching_corrected.py
+python install_su4_branching.py
 
 # 2. Test
 python su4_cli.py --test
@@ -75,17 +75,23 @@ jupyter notebook su4branching_test.ipynb
 ### Option 1: Corrected Automated Installer (Recommended)
 
 ```bash-zsh
-# 1. Download installer
-wget https://your-repo/install_su4_branching_corrected.py
-# OR copy the file to your directory
+# 1. clone git repository
+git clone  https://github.com/GFN-UdeA/su4-branching.git
+
 
 # 2. Run installer (creates CORRECT __init__.py)
-python install_su4_branching_corrected.py
+python install_su4_branching.py
 
 # 3. Follow prompts and select installation directory
 # Default: ~/su4-branching
-```
 
+# 4.Copy your files
+ - su4_branching.py → su4_branching/
+ - su4_export.py → su4_branching/
+ - su4_cli.py → project root
+ - su4branching_test.ipynb → project root
+
+```
 **What the installer does:**
 - ✓ Checks Python version (3.8+)
 - ✓ Installs/verifies dependencies
@@ -95,9 +101,9 @@ python install_su4_branching_corrected.py
 - ✓ Installs package with `pip install --use-pep517 -e .`
 - ✓ Tests installation
 
+ 
 ### Option 2: Manual Installation
-
-```bash
+```bash-zsh
 # Create project directory
 mkdir su4-branching
 cd su4-branching
@@ -108,13 +114,6 @@ pip install --upgrade numpy pandas setuptools jupyter matplotlib
 # Create package structure
 mkdir su4_branching
 touch su4_branching/__init__.py
-
-# Copy your files
-# - su4_branching.py → su4_branching/
-# - su4_export.py → su4_branching/
-# - su4_cli.py → project root
-# - su4branching_test.ipynb → project root
-
 # Install package
 pip install --use-pep517 -e .
 ```
