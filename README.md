@@ -391,11 +391,14 @@ pip install --user --use-pep517 -e .
 If you use this toolkit in your research, please cite:
 
 ```bibtex
-@article{Valencia2025,
-  title={SU(4) Branching Rules Toolkit for Nuclear Structure Theory},
-  author={Valencia, J.P. and Cordoba, S. and Henao, R.},
-  journal={Computer Physics Communications},
-  year={2025}
+@misc{quintero2025automatedcalculationspinisospin,
+      title={Automated calculation of spin, isospin branching rules for su(4) irreps}, 
+      author={S. Quintero and R. Henao and J. P. Valencia},
+      year={2025},
+      eprint={2511.00216},
+      archivePrefix={arXiv},
+      primaryClass={nucl-th},
+      url={https://arxiv.org/abs/2511.00216}, 
 }
 ```
 
