@@ -391,15 +391,19 @@ pip install --user --use-pep517 -e .
 If you use this toolkit in your research, please cite:
 
 ```bibtex
-@misc{quintero2025automatedcalculationspinisospin,
- 395 │       title={Automated calculation of spin, isospin branching rules for su(4) irreps}, 
- 396 │       author={S. Quintero and R. Henao and J. P. Valencia},
- 397 │       year={2025},
- 398 │       eprint={2511.00216},
- 399 │       archivePrefix={arXiv},
- 400 │       primaryClass={nucl-th},
- 401 │       url={https://arxiv.org/abs/2511.00216}, 
- 402 │ }
+@article{QUINTERO2026110118,
+title = {Automated calculation of spin–isospin branching rules for SU(4) irreps},
+journal = {Computer Physics Communications},
+volume = {323},
+pages = {110118},
+year = {2026},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2026.110118},
+url = {https://www.sciencedirect.com/science/article/pii/S0010465526001001},
+author = {S. Quintero and R. Henao and J.P. Valencia},
+keywords = {SU(4) branching rules, Spin–isospin decomposition, Group theory, Computational physics, Python toolkit},
+abstract = {The open-source Python package su4-branching automates the derivation of comprehensive spin S and isospin T branching rules for SU(4) irreducible representations. The Wigner supermultiplet scheme underlying nuclear and hadronic physics depends critically on SU(4) symmetry. However, practical calculations of branching rules for arbitrary SU(4) irreps have been largely inaccessible to the research community. Our implementation combines Racah’s tensor contraction formula with Python modularity, enabling straightforward exploration of high-dimensional SU(4) irreps through interactive Jupyter interfaces and multiple export formats. Comprehensive validation against three independent reference frameworks (Quesne 1976; Patera 1981; Pan et al. 2024) and dimensional consistency checks (necessary and sufficient for correctness) demonstrate reliability across dimensions 1–107. This work enables systematic group-theoretical investigations in nuclear structure, particle physics, and quantum chemistry. PROGRAM SUMMARY Program Title: su4branching. CPC Library link to program files: https://doi.org/10.17632/c8yfbgyvh9.1 Licensing provisions: MIT License. Programming language: Python 3.8+. External dependencies: NumPy, SymPy, pandas, matplotlib. Nature of problem: Automated decomposition of high-dimensional SU(4) irreps into spin-isospin multiplets Solution method: Racah formula via combinatorial algorithm (refs. [1], [2]). Restrictions: Tested up to dimension ∼107 (24 particles). Unusual features: Cumulative dimension checks, Jupyter notebook integration U(6)⊗SU(4),U(10)⊗SU(4) support.}
+}
 ```
 
 ---
