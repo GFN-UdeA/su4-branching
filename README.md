@@ -392,14 +392,14 @@ If you use this toolkit in your research, please cite:
 
 ```bibtex
 @misc{quintero2025automatedcalculationspinisospin,
-      title={Automated calculation of spin, isospin branching rules for su(4) irreps}, 
-      author={S. Quintero and R. Henao and J. P. Valencia},
-      year={2025},
-      eprint={2511.00216},
-      archivePrefix={arXiv},
-      primaryClass={nucl-th},
-      url={https://arxiv.org/abs/2511.00216}, 
-}
+ 395 │       title={Automated calculation of spin, isospin branching rules for su(4) irreps}, 
+ 396 │       author={S. Quintero and R. Henao and J. P. Valencia},
+ 397 │       year={2025},
+ 398 │       eprint={2511.00216},
+ 399 │       archivePrefix={arXiv},
+ 400 │       primaryClass={nucl-th},
+ 401 │       url={https://arxiv.org/abs/2511.00216}, 
+ 402 │ }
 ```
 
 ---
